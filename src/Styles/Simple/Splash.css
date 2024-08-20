@@ -1,0 +1,96 @@
+@font-face {
+    font-family: MursGothicDark;
+    src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
+}
+
+@font-face {
+    font-family: LiberationSansBold;
+    src: url(../../Assets/Fonts/LiberationSans-Bold.ttf);
+}
+
+
+.Container {
+    background-color: black;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.backgroundSplash {
+    min-width: 100%;
+    max-height: 80%;
+    height: auto;
+    z-index: 0;
+    display: block;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+#backsplash2 {
+    display: none;
+}
+
+.splashBodyText {
+    z-index: 20;
+    color: whitesmoke;
+    position: fixed;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
+    cursor: pointer;
+}
+
+.splashBodyGrabber {
+    color: whitesmoke;
+    position: fixed;
+    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
+    pointer-events: none;
+    user-select: none;
+    font-size: 800px;
+    top: 55%;
+    left: 4%;
+}
+
+#codeoption {
+    font-size: 200px;
+    top: 73%;
+    left: 28%;
+
+}
+
+#codeoption:hover {
+    color: rgb(109, 137, 212);
+}
+
+#designoption {
+    top: 80%;
+    left: 6%;
+    font-size: 80px;
+}
+
+#designoption:hover {
+    color: rgb(109, 137, 212);
+}
+
+#designoption:hover~#backsplash1 {
+    display: none;
+}
+
+#designoption:hover~#backsplash2 {
+    display: block;
+}
+
+#splashFooterText {
+    z-index: 2;
+    color: whitesmoke;
+    position: fixed;
+    font-size: 50px;
+    font-family: 'LiberationSansBold', sans-serif;
+    font-weight: bold;
+}
