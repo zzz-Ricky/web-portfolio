@@ -9,24 +9,33 @@
 }
 
 
-.Container {
-    background-color: black;
-    background: black;
-    height: 100%;
-    width: 100%;
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.textContainer {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    z-index: 5;
+    color: white;
+    padding: 20px;
+    top: 50%;
+}
+
+.leftHalf {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightHalf {
     display: flex;
 }
 
 .backgroundSplash {
-    min-width: 100%;
-    max-height: 80%;
-    height: auto;
+    height: 95vh;
     z-index: 0;
-    display: block;
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    user-select: none;
 }
 
 #backsplash2 {
@@ -34,63 +43,65 @@
 }
 
 .splashBodyText {
-    z-index: 20;
     color: whitesmoke;
-    position: fixed;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    font-stretch: condensed;
-    cursor: pointer;
+    width: fit-content;
 }
 
 .splashBodyGrabber {
     color: whitesmoke;
-    position: fixed;
-    font-family: 'roboto', sans-serif;
+    width: 100%;
+    font-size: min(200px, 20vw);
+    text-align: end;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-stretch: condensed;
-    pointer-events: none;
-    user-select: none;
-    font-size: 800px;
-    top: 55%;
-    left: 4%;
 }
 
-#codeoption {
-    font-size: 200px;
-    top: 73%;
-    left: 28%;
-
+#designOption {
+    font-size: min(30px, 3vw);
+    text-align: right;
+    padding-left: 20%;
+    ;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
+    white-space: nowrap;
 }
 
-#codeoption:hover {
-    color: rgb(109, 137, 212);
+#designOption:hover {
+    color: rgb(73, 140, 202);
+    cursor: pointer;
 }
 
-#designoption {
-    top: 80%;
-    left: 6%;
-    font-size: 80px;
+#codeOption {
+    font-size: min(50px, 5vw);
+    margin-top: min(500px, 20.5%);
+    margin-left: 5%;
+    white-space: nowrap;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
 }
 
-#designoption:hover {
-    color: rgb(109, 137, 212);
-}
-
-#designoption:hover~#backsplash1 {
-    display: none;
-}
-
-#designoption:hover~#backsplash2 {
-    display: block;
+#codeOption:hover {
+    color: rgb(73, 140, 202);
+    cursor: pointer;
 }
 
 #splashFooterText {
-    z-index: 2;
     color: whitesmoke;
-    position: fixed;
-    font-size: 50px;
+    width: fit-content;
     font-family: 'LiberationSansBold', sans-serif;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1280px) {
+    #codeOption {
+        font-size: min(40px, 4vw);
+        white-space: wrap;
+    }
+
+    .textContainer {
+        right: 20vw;
+    }
 }
