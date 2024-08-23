@@ -29,6 +29,7 @@ function SimpleSidebar() {
                     <li>Kdenlive - Video editing</li>
                 </ul>
             </div>
+            <div className='bufferSpace2' />
         </div>
     )
 }
