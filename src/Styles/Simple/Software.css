@@ -3,16 +3,22 @@
     src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
 }
 
+
 .bufferSpace1 {
     display: flex;
     width: 15vw;
     outline: 1px solid rgb(39, 39, 39);
+    align-items: end;
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .bufferSpace2 {
     display: flex;
     height: 35vh;
     outline: 1px solid rgb(39, 39, 39);
+    outline-offset: -1px;
+    /* box-shadow: rgba(0, 0, 0, -0.35) 0px 5px 15px; */
 }
 
 .bufferSpace3 {
@@ -22,6 +28,7 @@
     outline: 1px solid rgb(39, 39, 39);
     overflow-y: scroll;
     scrollbar-width: thin;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 #simpleBody {
@@ -34,8 +41,9 @@
 .sideBar {
     width: 15vw;
     height: 100vh;
-    color: rgb(0, 0, 0);
+    color: rgb(58, 58, 60);
     font-family: 'LiberationSansBold', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .sidebarHeader {
@@ -53,7 +61,6 @@
 
 .sidebarBody {
     background-color: #f4f4f4;
-    text-transform: lowercase;
     border-radius: 10px;
     margin: 10px;
 }
@@ -70,6 +77,7 @@
 
 .sidebarDescription {
     padding: 10px;
+    font-weight: lighter;
 }
 
 .sidebarLink {
@@ -101,14 +109,19 @@
     display: flex;
     min-height: 280px;
     transition-delay: 100ms;
-    transition: 1s ease;
+    transition: 0.3s ease;
     z-index: 1;
     overflow: hidden;
     border-radius: 10px;
     outline: 1px solid rgb(39, 39, 39);
-    background: black;
+    background: rgb(58, 58, 60);
     margin: 10px;
     cursor: pointer;
+}
+
+.simplePreview:hover {
+    transform: perspective(500px) rotateX(5deg);
+    filter: brightness(1.2);
 }
 
 .previewImage {
@@ -120,17 +133,15 @@
     position: absolute;
     font-family: MursGothicDark;
     font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.192);
 }
-
-
 
 .cardStack {
     width: 55vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: space-evenly;
-    align-items: flex-end;
     overflow-y: scroll;
 }
 
@@ -174,6 +185,7 @@
     padding: 4px;
     transition: 0.3s ease;
     color: #f4f4f4;
+    text-shadow: 1px 1px 12px rgba(49, 28, 28, 0.192);
 }
 
 .cardTitle:hover {
@@ -199,6 +211,19 @@
 .cardLink {
     font-family: 'LiberationSans', sans-serif;
     font-style: italic;
+}
+
+#nowPlaying {
+    font-family: MursGothicDark;
+    color: rgb(58, 58, 60);
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#coloredCube {
+    color: black;
 }
 
 @media screen and (max-width: 1280px) {

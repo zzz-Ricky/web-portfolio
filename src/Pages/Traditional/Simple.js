@@ -9,7 +9,7 @@ import SimpleProjectCard from '../../Components/SimpleProjectCard'
 function Simple() {
     return (
         <body id='simpleBody'>
-            <div className='bufferSpace1' />
+            <div className='bufferSpace1'>01 [Ricky Huynh 2024]</div>
             <SimpleSidebar />
             <div className='bufferSpace3'>
                 <SimpleProjectPreview
@@ -42,6 +42,7 @@ function Simple() {
                 />
             </div>
             <div className='cardStack'>
+                <p id='nowPlaying'>NOW PLAYING:</p>
                 <SimpleProjectCard
                     image='https://github.com/MaiTra10/Spout/blob/main/gifs%20and%20screenshots/desktop.gif?raw=true'
                     title='Spout'
