@@ -1,9 +1,4 @@
 @font-face {
-    font-family: MursGothicDark;
-    src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
-}
-
-@font-face {
     font-family: LiberationSansBold;
     src: url(../../Assets/Fonts/LiberationSans-Bold.ttf);
 }

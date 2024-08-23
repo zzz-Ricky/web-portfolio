@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Styles/App.css'
-import '../../Styles/Avant Garde/PG1.css'
+// import '../../Styles/Avant Garde/PG1.css'
 
 function PG1() {
     return (
