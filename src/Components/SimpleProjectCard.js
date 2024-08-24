@@ -7,9 +7,20 @@ function SimpleProjectCard({
     languages,
     link
 }) {
+
+    const isURL = (path) => {
+        try {
+            new URL(path);
+            return true;
+        } catch {
+            return false;
+        }
+    };
+    const imageSrc = isURL(image) ? image : require(`../Assets/Images/${image}`);
+
     return (
         <div className='simpleProject'>
-            <img className='cardImage' src={image} />
+            <img className='cardImage' src={imageSrc} />
             <div className='textSection'>
                 <p className='cardTitle'>{title}</p>
                 <div className='information'>

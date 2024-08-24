@@ -10,6 +10,7 @@
     outline: 1px solid rgb(39, 39, 39);
     align-items: end;
     padding: 10px;
+    font-family: 'LiberationSansBold', sans-serif;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
@@ -102,12 +103,17 @@
     padding-left: 10px;
 }
 
+.previewContainer {
+    outline: 0.5px solid rgb(39, 39, 39);
+}
+
 .simplePreview {
     position: relative;
     justify-content: center;
     color: #f4f4f4;
     display: flex;
     min-height: 280px;
+    max-height: 280px;
     transition-delay: 100ms;
     transition: 0.3s ease;
     z-index: 1;
@@ -125,7 +131,9 @@
 }
 
 .previewImage {
-    height: 100%;
+    height: inherit;
+    width: auto;
+    object-fit: contain;
 }
 
 .previewTitle {
@@ -156,6 +164,7 @@
     outline: 1px solid rgb(39, 39, 39);
     background: black;
     margin: 10px;
+    height: 75vh;
 }
 
 .cardImage {
@@ -163,6 +172,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 75%;
+    object-fit: cover;
 }
 
 .textSection {
@@ -185,7 +195,8 @@
     padding: 4px;
     transition: 0.3s ease;
     color: #f4f4f4;
-    text-shadow: 1px 1px 12px rgba(49, 28, 28, 0.192);
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.377);
+    white-space: wrap;
 }
 
 .cardTitle:hover {
@@ -211,6 +222,8 @@
 .cardLink {
     font-family: 'LiberationSans', sans-serif;
     font-style: italic;
+    white-space: wrap;
+    overflow-wrap: break-word;
 }
 
 #nowPlaying {
@@ -226,15 +239,214 @@
     color: black;
 }
 
+#placeholderOuter {
+    height: 75vh;
+    display: flex;
+    border-radius: 10px;
+    outline: 1px solid rgb(39, 39, 39);
+    margin: 10px;
+}
+
+#placeholderPlatter {
+    display: flex;
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgb(39, 39, 39);
+}
+
+#placeholderDisk {
+    display: flex;
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgb(39, 39, 39);
+}
+
+#placeholderCenter {
+    display: flex;
+    height: 15%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    justify-self: center;
+    outline: 1px solid rgb(39, 39, 39);
+}
+
 @media screen and (max-width: 1280px) {
+    .bufferSpace1 {
+        display: none;
+    }
+
+    .bufferSpace3 {
+        width: 23vw;
+    }
+
+    .simplePreview {
+        min-height: 200px;
+        max-height: 200px;
+    }
+
     .simpleProject {
         width: 100vw;
         flex-direction: column;
-        height: fit-content;
+        height: 75vh;
+
+    }
+
+    .sideBar {
+        display: flex;
+        flex-direction: column;
+        width: 32vw;
+    }
+
+    .sidebarLink {
+        font-size: 28px;
+    }
+
+    .cardStack {
+        width: 45vw;
+        padding-right: 18px;
+    }
+
+    .simpleProject {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .cardImage {
         height: 40%;
         width: 100%;
+    }
+
+    .cardTitle {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+    }
+
+    .textSection {
+        width: 100%;
+    }
+
+    .information {
+        text-align: center;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bufferSpace1 {
+        display: none;
+    }
+
+    .bufferSpace2 {
+        display: none;
+    }
+
+    .bufferSpace3 {
+        width: 23vw;
+    }
+
+    .simplePreview {
+        min-height: 75px;
+        max-height: 75px;
+    }
+
+    .previewTitle {
+        display: none;
+    }
+
+    .simpleProject {
+        width: 100vw;
+        flex-direction: column;
+        height: 95vh;
+
+    }
+
+    .sideBar {
+        position: fixed;
+        margin-left: 23vw;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        z-index: 1;
+    }
+
+    .sidebarHeader {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+
+    .sidebarBody {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+
+    .sidebarLink {
+        font-size: 28px;
+    }
+
+    .cardStack {
+        width: 80vw;
+        padding-right: 18px;
+    }
+
+    .simpleProject {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .cardImage {
+        height: 40%;
+        width: 100%;
+    }
+
+    .cardTitle {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+    }
+
+    .textSection {
+        width: 100%;
+    }
+
+    .information {
+        text-align: center;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    #nowPlaying {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 700px) and (max-width: 500px) {
+    .sideBar {
+        margin-top: 0vh;
+    }
+
+    #sidebarName {
+        font-size: 25px;
+    }
+
+    .sidebarLink {
+        font-size: 20px;
+    }
+
+    .sidebarSection {
+        font-size: 16px;
+    }
+
+    .cardTitle {
+        font-size: 30px;
     }
 }
