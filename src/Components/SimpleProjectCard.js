@@ -22,7 +22,7 @@ function SimpleProjectCard({
         <div className='simpleProject'>
             <img className='cardImage' src={imageSrc} />
             <div className='textSection'>
-                <p className='cardTitle'>{title}</p>
+                <a className='cardTitle' href={link} >{title}</a>
                 <div className='information'>
                     <p className='cardDesc'>{description}</p>
                     <p className='cardLang'>{languages}</p>
