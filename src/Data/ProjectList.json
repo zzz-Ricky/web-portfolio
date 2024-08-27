@@ -27,6 +27,13 @@
             "description": "Spout aims to solve the issue of homeowners and gardeners inefficiently watering their plants. It is said that up to 50% of the water used to water plants is wasted. Then how could we help inform these people with good watering habits? With remote watering activation, water tracking and weather based watering tips.",
             "languages": "QT6 (Desktop Client), Python",
             "link": "https://github.com/MaiTra10/Spout"
+        },
+        {
+            "image": "GoBang.GIF",
+            "title": "GOBANG",
+            "description": "First-Year engineering capstone project. Gobang is an Aruido based implementation of the classic board game.",
+            "languages": "Arduino (C++)",
+            "link": "https://github.com/zzz-Ricky/Gobang-Arduino"
         }
     ]
 }

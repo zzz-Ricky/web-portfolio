@@ -1,0 +1,115 @@
+hr {
+    padding: 0px;
+    margin: 0px;
+}
+
+.avGardeBody {
+    background-color: #f4f4f4;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.leftPage {
+    width: 50%;
+}
+
+.rightPage {
+    width: 50%;
+}
+
+.topMargin {
+    height: 5%;
+    color: white;
+    mix-blend-mode: difference;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 2;
+}
+
+.upperTopMargin {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.lowerTopMargin {
+    display: inline;
+}
+
+.pageContent {
+    width: 100%;
+    height: 90%;
+}
+
+.bottomMargin {
+    height: 5%;
+    color: white;
+    mix-blend-mode: difference;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageNumber {
+    background-color: white;
+    color: black;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.leftBlurb {
+    margin-left: 15%;
+}
+
+.rightBlurb {
+    margin-right: 15%;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+}
+
+#goBack {
+    left: 0;
+    background: rgb(7, 9, 28);
+    background: linear-gradient(90deg, rgba(7, 9, 28, 0.5108695652173914) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+}
+
+#goBack:hover {
+    opacity: 1;
+}
+
+#goForth {
+    right: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(7, 9, 28, 0.5108695652173914) 100%);
+    opacity: 0;
+}
+
+#goForth:hover {
+    opacity: 1;
+}
+
+.pageTraverse {
+    position: absolute;
+    z-index: 10;
+    width: 10vw;
+    height: 100vh;
+    transition-delay: 100ms;
+    transition: 0.3s ease;
+}
+
+.pageTraverse:hover {
+    transition-delay: 100ms;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
