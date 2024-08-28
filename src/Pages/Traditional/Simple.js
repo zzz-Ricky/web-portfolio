@@ -5,6 +5,7 @@ import '../../Styles/Simple/Software.css'
 import SimpleProjectCard from '../../Components/SimpleProjectCard'
 import ProjectData from '../../Data/ProjectList.json'
 import SimplePlaceholder from '../../Components/SimplePlaceholder';
+import { useNavigate } from "react-router-dom";
 
 function Simple() {
 
@@ -23,8 +24,14 @@ function Simple() {
         console.log("test2")
     }, [selectedProject]);
 
+    const navigate = useNavigate();
+    const goToPrevPage = () => {
+        navigate('/');
+    };
+
     return (
         <body id='simpleBody'>
+            <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
             <div className='bufferSpace1'>01 [Ricky Huynh 2024]</div>
             <SimpleSidebar />
             <div className='bufferSpace3'>

@@ -34,6 +34,19 @@ function PG3() {
                     right='Design portfolio'
                 />
                 <div className='pageContent'>
+                    <div id='contactMe'>
+                        <h1 id='creditsTitle'>Contact</h1>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>LINKEDIN⇲</a>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>GITHUB⇲</a>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>ARTSTATION⇲</a>
+                    </div>
+                    <div id='siteCredits'>
+                        <h1 id='creditsTitle'>Credits</h1>
+                        <div className='creditsCategory'>
+                            <h1 className='mursGothic'>TYPEFACE// MURS GOTHIC - </h1>
+                            <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>Maksym Kobuzan⇲</a>
+                        </div>
+                    </div>
                 </div>
                 <AGBottomMargin
                     left='Placeholder'

@@ -1,3 +1,43 @@
+@font-face {
+    font-family: MursGothicDark;
+    src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
+}
+
+.pageContent {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
 #contactPage {
     background-color: rgb(19, 19, 19);
+}
+
+#siteCredits {
+    padding-left: 50px;
+}
+
+#creditsTitle {
+    font-style: italic;
+    font-size: 32px;
+}
+
+.creditsCategory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mursGothic {
+    font-family: MursGothicDark;
+}
+
+#creditLink {
+    color: whitesmoke;
+    font-size: 28px;
+    padding-left: 14px;
+}
+
+#contactMe {
+    padding-left: 50px;
 }

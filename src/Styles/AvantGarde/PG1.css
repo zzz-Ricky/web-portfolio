@@ -1,5 +1,16 @@
-html,
-body {
-    background-color: red;
-    background: red;
+@font-face {
+    font-family: MursGothicDark;
+    src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
+}
+
+#leftColour {
+    background-color: rgb(155, 180, 172);
+    display: flex;
+    height: 100%;
+    width: 87%;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    font-size: 55px;
+    font-family: MursGothicDark;
 }
