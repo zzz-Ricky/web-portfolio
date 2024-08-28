@@ -29,7 +29,7 @@
             "link": "https://github.com/MaiTra10/Spout"
         },
         {
-            "image": "GoBang.GIF",
+            "image": "https://github.com/zzz-Ricky/Gobang-Arduino/blob/main/GIFS/Demo_2.gif?raw=true",
             "title": "GOBANG",
             "description": "First-Year engineering capstone project. Gobang is an Aruido based implementation of the classic board game.",
             "languages": "Arduino (C++)",
