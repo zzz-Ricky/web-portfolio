@@ -11,9 +11,6 @@ function PG3() {
     const goToPrevPage = () => {
         navigate('/page2');
     };
-    const goToNextPage = () => {
-        navigate('/');
-    };
 
     return (
         <div className='avGardeBody'>

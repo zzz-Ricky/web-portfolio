@@ -2,7 +2,6 @@ import React from 'react'
 import '../../Styles/App.css'
 import '../../Styles/AvantGarde/UniversalAG.css'
 import '../../Styles/AvantGarde/PG2.css'
-import AGTopMargin from '../../Components/AGTopMargin'
 import AGBottomMargin from '../../Components/AGBottomMargin'
 import Spread from '../../Assets/Images/Spread.jpg'
 import { useNavigate } from "react-router-dom";
@@ -20,7 +19,7 @@ function PG2() {
         <div className='avGardeBody'>
             <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
             <div id='goForth' className='pageTraverse' onClick={goToNextPage}></div>
-            <img src={Spread} alt="Two-Page wide photo spread" className='doublePhoto' />
+            <img src={Spread} alt="Classroom" className='doublePhoto' />
             <div className='leftPage'>
                 <div className='doublePageContent'>
                 </div>
