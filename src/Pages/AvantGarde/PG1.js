@@ -1,24 +1,24 @@
 import React from 'react'
 import '../../Styles/App.css'
-import '../../Styles/Avant Garde/UniversalAG.css'
-import '../../Styles/Avant Garde/PG3.css'
+import '../../Styles/AvantGarde/UniversalAG.css'
 import AGTopMargin from '../../Components/AGTopMargin'
 import AGBottomMargin from '../../Components/AGBottomMargin'
 import { useNavigate } from "react-router-dom";
 
-function PG3() {
+function PG1() {
+
     const navigate = useNavigate();
     const goToPrevPage = () => {
-        navigate('/page2');
+        navigate('/');
     };
     const goToNextPage = () => {
-        navigate('/page3');
+        navigate('/page2');
     };
 
     return (
         <div className='avGardeBody'>
             <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
-            {/* <div id='goForth' className='pageTraverse' onClick={goToNextPage}></div> */}
+            <div id='goForth' className='pageTraverse' onClick={goToNextPage}></div>
             <div className='leftPage'>
                 <AGTopMargin
                     left='RICKY HUYNH'
@@ -27,11 +27,11 @@ function PG3() {
                 <div className='pageContent'>
                 </div>
                 <AGBottomMargin
-                    left='5'
-                    right='Placeholder'
+                    left='1'
+                    right='For an Optimal experience, view this page at 100% zoom'
                 />
             </div>
-            <div className='rightPage' id='contactPage'>
+            <div className='rightPage'>
                 <AGTopMargin
                     left='RICKY HUYNH'
                     right='Design portfolio'
@@ -40,7 +40,7 @@ function PG3() {
                 </div>
                 <AGBottomMargin
                     left='Placeholder'
-                    right='6'
+                    right='2'
                     flip='yes'
                 />
             </div>
@@ -48,4 +48,4 @@ function PG3() {
     )
 }
 
-export default PG3
+export default PG1

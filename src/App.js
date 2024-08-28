@@ -14,9 +14,9 @@ import './Styles/App.css'
 
 import Home from "./Pages/Home";
 import Splash from "./Pages/Splash";
-import PG1 from "./Pages/Avant Garde/PG1";
-import PG2 from "./Pages/Avant Garde/PG2";
-import PG3 from "./Pages/Avant Garde/PG3";
+import PG1 from "./Pages/AvantGarde/PG1";
+import PG2 from "./Pages/AvantGarde/PG2";
+import PG3 from "./Pages/AvantGarde/PG3";
 import Simple from "./Pages/Traditional/Simple";
 import MissingPage from "./Pages/MissingPage";
 
