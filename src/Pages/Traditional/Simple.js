@@ -28,19 +28,18 @@ function Simple() {
             <div className='bufferSpace1'>01 [Ricky Huynh 2024]</div>
             <SimpleSidebar />
             <div className='bufferSpace3'>
-                {/* {ProjectData.projects.map(ProjectEntry => (
+                {ProjectData.projects.map(ProjectEntry => (
                     <div onClick={() => selectionHandler(ProjectEntry)} className='previewContainer'>
                         <SimpleProjectPreview
                             key={ProjectEntry.title}
-                            image={ProjectEntry.image}
                             title={ProjectEntry.title}
                         />
                     </div>
-                ))} */}
+                ))}
             </div>
             <div className='cardStack'>
                 <p id='nowPlaying'>NOW PLAYING:</p>
-                {/* {selectedProject &&
+                {selectedProject &&
                     < SimpleProjectCard
                         image={selectedProject.image}
                         title={selectedProject.title}
@@ -48,7 +47,7 @@ function Simple() {
                         languages={selectedProject.languages}
                         link={selectedProject.link}
                     />
-                } */}
+                }
                 {!selectedProject &&
                     <SimplePlaceholder></SimplePlaceholder>
                 }
