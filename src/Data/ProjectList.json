@@ -17,7 +17,7 @@
         {
             "image": "PulsePursuit.GIF",
             "title": "Pulse Pursuit",
-            "description": "Pulse Pursuit combines the feedback of real life biometrics with the thrill of an interactive gamescape. Engage in tasks such as collecting items, harnessing power-ups, and navigating a maze of rooms and obstacles whilst the game responds to the player`s heart rate.",
+            "description": "Pulse Pursuit combines the feedback of real life biometrics with the thrill of an interactive game scape. Engage in tasks such as collecting items, harnessing power-ups, and navigating a maze of rooms and obstacles whilst the game responds to the player`s heart rate.",
             "languages": "Python, PyGame CE",
             "link": "https://github.com/tahmeedm/Pulse-Pursuit"
         },
