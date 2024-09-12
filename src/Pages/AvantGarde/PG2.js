@@ -5,6 +5,7 @@ import '../../Styles/AvantGarde/PG2.css'
 import AGBottomMargin from '../../Components/AGBottomMargin'
 import Spread from '../../Assets/Images/Spread.jpg'
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"
 
 function PG2() {
     const navigate = useNavigate();
@@ -16,7 +17,14 @@ function PG2() {
     };
 
     return (
-        <div className='avGardeBody'>
+        <motion.div
+            className='avGardeBody'
+            initial={{ opacity: 0.4 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0.4 }}
+            transition={{
+                duration: 0.1,
+            }}>
             <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
             <div id='goForth' className='pageTraverse' onClick={goToNextPage}></div>
             <img src={Spread} alt="Classroom" className='doublePhoto' />
@@ -43,7 +51,7 @@ function PG2() {
                     flip='yes'
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 

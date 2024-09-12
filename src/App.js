@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './Styles/App.css'
 
 // 88                                                                                                                                     
@@ -12,27 +12,13 @@ import './Styles/App.css'
 //                         88                                                88                        aa,    ,88                         
 //                         88                                                88                         "Y8bbdP"                          
 
-import Home from "./Pages/Home";
-import Splash from "./Pages/Splash";
-import PG1 from "./Pages/AvantGarde/PG1";
-import PG2 from "./Pages/AvantGarde/PG2";
-import PG3 from "./Pages/AvantGarde/PG3";
-import Simple from "./Pages/Traditional/Simple";
-import MissingPage from "./Pages/MissingPage";
+
+import AnimatedRoutes from "./Components/AnimatedRoutes";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Splash />}>
-          <Route index element={<Home />} />
-        </Route>
-        <Route path="page1" element={<PG1 />} />
-        <Route path="page2" element={<PG2 />} />
-        <Route path="page3" element={<PG3 />} />
-        <Route path="simple" element={<Simple />} />
-        <Route path="*" element={<MissingPage />} />
-      </Routes>
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }

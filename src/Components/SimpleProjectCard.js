@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 function SimpleProjectCard({
     image,
@@ -19,7 +20,12 @@ function SimpleProjectCard({
     const imageSrc = isURL(image) ? image : require(`../Assets/Images/${image}`);
 
     return (
-        <div className='simpleProject'>
+        <motion.div
+            className='simpleProject'
+            initial={{ opacity: 0.6 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <img className='cardImage' src={imageSrc} />
             <div className='textSection'>
                 <a className='cardTitle' href={link} >{title}</a>
@@ -29,7 +35,7 @@ function SimpleProjectCard({
                     <p className='cardLink'>{link}</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

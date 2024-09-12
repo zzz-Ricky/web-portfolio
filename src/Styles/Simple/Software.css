@@ -11,6 +11,7 @@
     align-items: end;
     padding: 10px;
     font-family: 'LiberationSansBold', sans-serif;
+    z-index: 1;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
@@ -19,6 +20,7 @@
     height: 35vh;
     outline: 1px solid rgb(39, 39, 39);
     outline-offset: -1px;
+    z-index: 1;
     /* box-shadow: rgba(0, 0, 0, -0.35) 0px 5px 15px; */
 }
 
@@ -29,6 +31,8 @@
     outline: 1px solid rgb(39, 39, 39);
     overflow-y: scroll;
     scrollbar-width: thin;
+    z-index: 1;
+    backdrop-filter: blur(20px);
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
@@ -45,6 +49,7 @@
     color: rgb(58, 58, 60);
     font-family: 'LiberationSansBold', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .sidebarHeader {
@@ -52,18 +57,17 @@
     padding-left: 10px;
     padding-right: 10px;
     height: 30%;
-    background-color: #f4f4f4;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    backdrop-filter: blur(20px);
 }
 
 .sidebarBody {
-    background-color: #f4f4f4;
     border-radius: 10px;
     margin: 10px;
+    backdrop-filter: blur(20px);
 }
 
 #greeting {
@@ -71,7 +75,7 @@
 }
 
 #sidebarName {
-    padding: 10px;
+    padding: 5px;
     font-size: 35px;
     font-family: MursGothicDark;
 }
@@ -234,6 +238,7 @@
     margin-left: 10px;
     font-size: 24px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 #coloredCube {
@@ -246,6 +251,7 @@
     border-radius: 10px;
     outline: 1px solid rgb(39, 39, 39);
     margin: 10px;
+    backdrop-filter: blur(20px);
 }
 
 #placeholderPlatter {
@@ -277,6 +283,15 @@
     border-radius: 50%;
     justify-self: center;
     outline: 1px solid rgb(39, 39, 39);
+}
+
+.box {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: rgb(188, 202, 243);
+    z-index: 0;
+    position: absolute;
 }
 
 @media screen and (max-width: 1280px) {

@@ -5,6 +5,7 @@ import '../../Styles/AvantGarde/PG3.css'
 import AGTopMargin from '../../Components/AGTopMargin'
 import AGBottomMargin from '../../Components/AGBottomMargin'
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"
 
 function PG3() {
     const navigate = useNavigate();
@@ -13,7 +14,14 @@ function PG3() {
     };
 
     return (
-        <div className='avGardeBody'>
+        <motion.div
+            className='avGardeBody'
+            initial={{ opacity: 0.4 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0.4 }}
+            transition={{
+                duration: 0.1,
+            }}>
             <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
             {/* <div id='goForth' className='pageTraverse' onClick={goToNextPage}></div> */}
             <div className='leftPage'>
@@ -54,7 +62,7 @@ function PG3() {
                     flip='yes'
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
