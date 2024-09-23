@@ -1,7 +1,7 @@
 import { useState, RefObject, useEffect } from "react";
 import { useMotionValue, useSpring, frame } from "framer-motion";
 
-const spring = { damping: 55, stiffness: 500, restDelta: 1 };
+const spring = { damping: 70, stiffness: 5020, restDelta: 1 };
 
 export function MouseBall(ref: RefObject<HTMLElement>) {
     const xPoint = useMotionValue(0);

@@ -327,12 +327,13 @@
 }
 
 .box {
-    width: 10vw;
-    height: 10vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
-    background: rgb(188, 202, 243);
+    /* background: rgb(188, 202, 243); */
     z-index: 0;
     position: absolute;
+    outline: 10px solid rgb(97, 134, 168);
 }
 
 .knobContainer {
