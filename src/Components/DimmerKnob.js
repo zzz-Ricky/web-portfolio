@@ -15,8 +15,8 @@ function DimmerKnob({ darkStatus }) {
                     <div id='bottomMarkings'>
                         <div>-0X</div>
                         <div id='increments'>
-                            <div>#f4f4f4</div>
-                            <div id='maxMagnitude'>#080808</div>
+                            <div>#080808</div>
+                            <div id='maxMagnitude'>#f4f4f4</div>
                         </div>
                     </div>
                     {darkStatus &&
