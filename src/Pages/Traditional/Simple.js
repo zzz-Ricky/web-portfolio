@@ -24,7 +24,6 @@ function Simple() {
     };
 
     useEffect(() => {
-        console.log("test2")
     }, [selectedProject]);
 
     const navigate = useNavigate();
@@ -32,9 +31,19 @@ function Simple() {
         navigate('/');
     };
 
+    const [darkMode, setDarkMode] = useState(false);
+    const darkModeHandler = () => {
+        setDarkMode(!darkMode);
+    };
+
+    useEffect(() => {
+
+    }, [darkMode]);
+
     return (
         <motion.div
             id='simpleBody'
+            className={darkMode ? 'dark-mode' : 'light-mode'}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -54,7 +63,10 @@ function Simple() {
                 }} />
             <div id='goBack' className='pageTraverse' onClick={goToPrevPage}></div>
             <div className='bufferSpace1'>01 [Ricky Huynh 2024]</div>
-            <SimpleSidebar />
+            <SimpleSidebar
+                darkStatus={darkMode}
+                darkModeHandler={darkModeHandler}
+            />
             <div className='bufferSpace3'>
                 {ProjectData.projects.map(ProjectEntry => (
                     <div
@@ -81,7 +93,7 @@ function Simple() {
                     />
                 }
                 {!selectedProject &&
-                    <SimplePlaceholder></SimplePlaceholder>
+                    <SimplePlaceholder darkStatus={darkMode}></SimplePlaceholder>
                 }
             </div>
         </motion.div>

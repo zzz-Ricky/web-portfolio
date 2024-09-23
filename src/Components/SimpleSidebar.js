@@ -1,6 +1,8 @@
 import React from 'react'
 
-function SimpleSidebar() {
+import DimmerKnob from './DimmerKnob'
+
+function SimpleSidebar({ darkModeHandler, darkStatus }) {
     return (
         <div className='sideBar'>
             <div className='sidebarHeader'>
@@ -31,7 +33,11 @@ function SimpleSidebar() {
                     <li>Kdenlive - Video editing</li>
                 </ul>
             </div>
-            <div className='bufferSpace2'>02</div>
+            <div className='bufferSpace2'>02
+                <div className='knobContainer' onClick={darkModeHandler}>
+                    <DimmerKnob darkStatus={darkStatus}>Click Me</DimmerKnob>
+                </div>
+            </div>
         </div>
     )
 }

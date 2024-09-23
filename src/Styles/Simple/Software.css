@@ -3,6 +3,27 @@
     src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
 }
 
+:root {
+    --Semi-White: #f4f4f4;
+    --Semi-Black: #080808;
+    --Text-Light: rgb(58, 58, 60);
+    --Text-Dark: rgb(209, 209, 218);
+    --StandardBlur: 20px;
+}
+
+.light-mode {
+    background-color: var(--Semi-White);
+    color: var(--Text-Light);
+    transition-delay: 100ms;
+    transition: 0.3s ease;
+}
+
+.dark-mode {
+    background-color: var(--Semi-Black);
+    color: var(--Text-Dark);
+    transition-delay: 100ms;
+    transition: 0.3s ease;
+}
 
 .bufferSpace1 {
     display: flex;
@@ -11,7 +32,7 @@
     align-items: end;
     padding: 10px;
     font-family: 'LiberationSansBold', sans-serif;
-    z-index: 1;
+    z-index: 2;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
@@ -20,7 +41,8 @@
     height: 35vh;
     outline: 1px solid rgb(39, 39, 39);
     outline-offset: -1px;
-    z-index: 1;
+    z-index: 2;
+    backdrop-filter: blur(var(--StandardBlur));
     /* box-shadow: rgba(0, 0, 0, -0.35) 0px 5px 15px; */
 }
 
@@ -31,13 +53,14 @@
     outline: 1px solid rgb(39, 39, 39);
     overflow-y: scroll;
     scrollbar-width: thin;
-    z-index: 1;
-    backdrop-filter: blur(20px);
+    z-index: 2;
+    backdrop-filter: blur(var(--StandardBlur));
+    border: 1px solid #ffffff25;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 #simpleBody {
-    background-color: #f4f4f4;
+    /* background-color: var(--Semi-White); */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -46,10 +69,9 @@
 .sideBar {
     width: 15vw;
     height: 100vh;
-    color: rgb(58, 58, 60);
     font-family: 'LiberationSansBold', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 .sidebarHeader {
@@ -61,13 +83,15 @@
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--StandardBlur));
+    border: 1px solid #ffffff25;
 }
 
 .sidebarBody {
     border-radius: 10px;
     margin: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--StandardBlur));
+    border: 1px solid #ffffff25;
 }
 
 #greeting {
@@ -88,7 +112,7 @@
 .sidebarLink {
     padding-left: 10px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: grey;
     font-size: 30px;
 }
 
@@ -114,13 +138,13 @@
 .simplePreview {
     position: relative;
     justify-content: center;
-    color: #f4f4f4;
+    color: var(--Semi-White);
     display: flex;
     min-height: 280px;
     max-height: 280px;
     transition-delay: 100ms;
     transition: 0.3s ease;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     border-radius: 10px;
     outline: 1px solid rgb(39, 39, 39);
@@ -158,11 +182,11 @@
 }
 
 .simpleProject {
-    color: #f4f4f4;
+    color: var(--Semi-White);
     display: flex;
     transition-delay: 100ms;
     transition: 1s ease;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     border-radius: 10px;
     outline: 1px solid rgb(39, 39, 39);
@@ -199,7 +223,7 @@
     text-align: left;
     padding: 4px;
     transition: 0.3s ease;
-    color: #f4f4f4;
+    color: var(--Semi-White);
     text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.377);
     white-space: wrap;
 }
@@ -233,12 +257,11 @@
 
 #nowPlaying {
     font-family: MursGothicDark;
-    color: rgb(58, 58, 60);
     margin: 0px;
     margin-left: 10px;
     font-size: 24px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 #coloredCube {
@@ -251,7 +274,7 @@
     border-radius: 10px;
     outline: 1px solid rgb(39, 39, 39);
     margin: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--StandardBlur));
 }
 
 #placeholderPlatter {
@@ -283,6 +306,24 @@
     border-radius: 50%;
     justify-self: center;
     outline: 1px solid rgb(39, 39, 39);
+    justify-content: center;
+}
+
+#diskLogo {
+    justify-self: center;
+    align-self: center;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.light-Logo {
+    filter: invert(1);
+}
+
+.dark-Logo {
+    filter: invert(0);
 }
 
 .box {
@@ -292,6 +333,12 @@
     background: rgb(188, 202, 243);
     z-index: 0;
     position: absolute;
+}
+
+.knobContainer {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1280px) {
