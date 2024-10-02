@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import './Styles/App.css'
 
@@ -14,13 +15,33 @@ import './Styles/App.css'
 
 
 import AnimatedRoutes from "./Components/AnimatedRoutes";
+import Preloader from "./Components/Preloader";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <AnimatedRoutes />
-    </BrowserRouter>
-  );
+
+
+  //Page state
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const preLoadDelay = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1500);
+    }
+
+    preLoadDelay();
+  }, [])
+
+  return isLoading ?
+    (
+      <Preloader />
+    )
+    :
+    (
+      <BrowserRouter>
+        <AnimatedRoutes />
+      </BrowserRouter>
+    );
 }
 
 export default App;
