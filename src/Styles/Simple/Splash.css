@@ -3,6 +3,28 @@
     src: url(../../Assets/Fonts/LiberationSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: MursGothicDark;
+    src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
+}
+
+/* Webfont: NeuePowerTrial-Ultra */
+@font-face {
+    font-family: 'NeuePowerTrialUltra';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Ultra.woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: NeuePowerTrial-MediumOblique */
+@font-face {
+    font-family: 'NeuePowerTrialMed';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Medium.woff');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
 .container {
     height: 100vh;
@@ -17,6 +39,7 @@
     color: white;
     padding: 20px;
     top: 50%;
+    z-index: 3;
 }
 
 #backSplash2 {
@@ -78,7 +101,7 @@
     font-weight: bold;
     font-stretch: condensed;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 4;
 }
 
 #designOption:hover {
@@ -94,6 +117,7 @@
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-stretch: condensed;
+    z-index: 3;
 }
 
 #codeOption:hover {
@@ -107,6 +131,58 @@
     font-family: 'LiberationSansBold', sans-serif;
     font-weight: bold;
     padding-left: 1vw;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -130%;
+    transform: perspective(500px) rotateX(-5deg) rotateY(-10deg);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.scrollItems {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: scroll 10s linear infinite;
+}
+
+.overlayText {
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    font-family: 'MursGothicDark';
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: whitesmoke;
+    /* Text color */
+}
+
+#scroll1 {
+    position: absolute;
+    overflow: hidden;
+    width: 600px;
+    height: 95vh;
+    right: 10%;
+}
+
+#content {
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        /* Start at the top */
+    }
+
+    100% {
+        transform: translateY(100%);
+        /* Move up by the height of one full set of text */
+    }
 }
 
 @media screen and (max-width: 1280px) {
