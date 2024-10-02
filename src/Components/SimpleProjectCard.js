@@ -28,7 +28,7 @@ function SimpleProjectCard({
         >
             <img className='cardImage' src={imageSrc} />
             <div className='textSection'>
-                <a className='cardTitle' href={link} >{title}</a>
+                <a className='cardTitle' href={link} target="_blank">{title}</a>
                 <div className='information'>
                     <p className='cardDesc'>{description}</p>
                     <div className='cardLang'>

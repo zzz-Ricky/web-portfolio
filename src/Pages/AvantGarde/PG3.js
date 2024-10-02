@@ -44,19 +44,19 @@ function PG3() {
                 <div className='pageContent'>
                     <div id='contactMe'>
                         <h1 id='creditsTitle'>Contact</h1>
-                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>LINKEDIN⇲</a>
-                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>GITHUB⇲</a>
-                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>ARTSTATION⇲</a>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink' target="_blank">LINKEDIN⇲</a>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink' target="_blank">GITHUB⇲</a>
+                        <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink' target="_blank">ARTSTATION⇲</a>
                     </div>
                     <div id='siteCredits'>
                         <h1 id='creditsTitle'>Credits</h1>
                         <div className='creditsCategory'>
                             <h1 className='mursGothic'>TYPEFACE// MURS GOTHIC - </h1>
-                            <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>Maksym Kobuzan⇲</a>
+                            <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink' target="_blank">Maksym Kobuzan⇲</a>
                         </div>
                         <div className='creditsCategory'>
                             <h1 className='NeuePower'>TYPEFACE// NEUE POWER - </h1>
-                            <a href="https://www.behance.net/gallery/144961265/Neue-Power-Free-Font?tracking_source=project_owner_other_projects#" className='NeuePower' id='creditLink'>Power Type⇲</a>
+                            <a href="https://www.behance.net/gallery/144961265/Neue-Power-Free-Font?tracking_source=project_owner_other_projects#" className='NeuePower' id='creditLink' target="_blank">Power Type⇲</a>
                         </div>
                     </div>
                 </div>
