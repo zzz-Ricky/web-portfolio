@@ -54,6 +54,10 @@ function PG3() {
                             <h1 className='mursGothic'>TYPEFACE// MURS GOTHIC - </h1>
                             <a href="https://www.behance.net/gallery/200845737/MURS-GOTHIC-Free-Font-Latin-Cyrillic" className='mursGothic' id='creditLink'>Maksym Kobuzan⇲</a>
                         </div>
+                        <div className='creditsCategory'>
+                            <h1 className='NeuePower'>TYPEFACE// NEUE POWER - </h1>
+                            <a href="https://www.behance.net/gallery/144961265/Neue-Power-Free-Font?tracking_source=project_owner_other_projects#" className='NeuePower' id='creditLink'>Power Type⇲</a>
+                        </div>
                     </div>
                 </div>
                 <AGBottomMargin

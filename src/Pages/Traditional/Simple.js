@@ -45,10 +45,16 @@ function Simple() {
             id='simpleBody'
             className={darkMode ? 'dark-mode' : 'light-mode'}
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={
+                {
+                    backgroundColor: darkMode ? 'var(--Semi-Black)' : 'var(--Semi-White)',
+                    color: darkMode ? 'var(--Text-Dark)' : 'var(--Text-Light)',
+                    opacity: 1
+                }
+            }
             exit={{ opacity: 0 }}
             transition={{
-                duration: 0.5,
+                duration: 0.3,
                 ease: [0, 0.60, 0.4, 1.01]
             }}
         >

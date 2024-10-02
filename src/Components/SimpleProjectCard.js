@@ -31,7 +31,13 @@ function SimpleProjectCard({
                 <a className='cardTitle' href={link} >{title}</a>
                 <div className='information'>
                     <p className='cardDesc'>{description}</p>
-                    <p className='cardLang'>{languages}</p>
+                    <div className='cardLang'>
+                        {languages.map((language, index) => (
+                            <div key={index} className='languageItem'>
+                                {language}
+                            </div>
+                        ))}
+                    </div>
                     <p className='cardLink'>{link}</p>
                 </div>
             </div>

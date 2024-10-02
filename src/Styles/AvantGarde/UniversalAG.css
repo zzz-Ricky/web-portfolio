@@ -80,7 +80,7 @@ hr {
 #goBack {
     left: 0;
     background: rgb(7, 9, 28);
-    background: linear-gradient(90deg, rgba(7, 9, 28, 0.5108695652173914) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(31, 40, 119, 0.51) 0%, rgba(255, 255, 255, 0) 100%);
     opacity: 0;
 }
 
@@ -91,7 +91,7 @@ hr {
 #goForth {
     right: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(7, 9, 28, 0.5108695652173914) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #07091c82 100%);
     opacity: 0;
 }
 

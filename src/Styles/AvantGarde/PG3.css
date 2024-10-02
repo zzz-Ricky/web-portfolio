@@ -3,6 +3,24 @@
     src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
 }
 
+/* Webfont: NeuePowerTrial-Ultra */
+@font-face {
+    font-family: 'NeuePowerTrialUltra';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Ultra.woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: NeuePowerTrial-MediumOblique */
+@font-face {
+    font-family: 'NeuePowerTrialMed';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Medium.woff');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 .pageContent {
     color: whitesmoke;
     display: flex;
@@ -30,6 +48,10 @@
 
 .mursGothic {
     font-family: MursGothicDark;
+}
+
+.NeuePower {
+    font-family: NeuePowerTrialUltra;
 }
 
 #creditLink {

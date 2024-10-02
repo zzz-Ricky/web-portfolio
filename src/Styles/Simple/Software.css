@@ -3,6 +3,24 @@
     src: url(../../Assets/Fonts/MursGothic-WideDark.woff);
 }
 
+/* Webfont: NeuePowerTrial-Ultra */
+@font-face {
+    font-family: 'NeuePowerTrialUltra';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Ultra.woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: NeuePowerTrial-MediumOblique */
+@font-face {
+    font-family: 'NeuePowerTrialMed';
+    src: url('../../Assets/Fonts/NeuePowerTrial-Medium.woff');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 :root {
     --Semi-White: #f4f4f4;
     --Semi-Black: #080808;
@@ -12,17 +30,17 @@
 }
 
 .light-mode {
-    background-color: var(--Semi-White);
-    color: var(--Text-Light);
-    transition-delay: 100ms;
-    transition: 0.3s ease;
+    /* background-color: var(--Semi-White);
+    color: var(--Text-Light); */
+    /* transition-delay: 100ms;
+    transition: 0.3s ease; */
 }
 
 .dark-mode {
-    background-color: var(--Semi-Black);
-    color: var(--Text-Dark);
-    transition-delay: 100ms;
-    transition: 0.3s ease;
+    /* background-color: var(--Semi-Black);
+    color: var(--Text-Dark); */
+    /* transition-delay: 100ms;
+    transition: 0.3s ease; */
 }
 
 .bufferSpace1 {
@@ -69,7 +87,7 @@
 .sideBar {
     width: 15vw;
     height: 100vh;
-    font-family: 'LiberationSansBold', sans-serif;
+    font-family: NeuePowerTrialUltra;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
@@ -95,29 +113,35 @@
 }
 
 #greeting {
-    font-family: 'LiberationSansBold', sans-serif;
+    font-family: 'NeuePowerTrialMed', sans-serif;
 }
 
 #sidebarName {
     padding: 5px;
-    font-size: 35px;
+    font-size: 200%;
     font-family: MursGothicDark;
 }
 
 .sidebarDescription {
+    font-size: 90%;
     padding: 10px;
-    font-weight: lighter;
+    font-family: NeuePowerTrialMed;
+    font-weight: light;
 }
 
 .sidebarLink {
     padding-left: 10px;
     text-decoration: none;
     color: grey;
-    font-size: 30px;
+    font-size: 200%;
 }
 
 .sidebarLink:hover {
     color: rgb(127, 229, 255);
+}
+
+.sidebarIcon {
+    filter: invert(51%) sepia(0%) saturate(238%) hue-rotate(159deg) brightness(98%) contrast(82%);
 }
 
 .linkStack {
@@ -126,9 +150,15 @@
 }
 
 .sidebarSection {
-    font-size: 20px;
+    font-size: 115%;
     font-family: MursGothicDark;
     padding-left: 10px;
+}
+
+.sidebarContent {
+    font-size: 90%;
+    font-weight: light;
+    font-family: NeuePowerTrialMed;
 }
 
 .previewContainer {
@@ -184,8 +214,8 @@
 .simpleProject {
     color: var(--Semi-White);
     display: flex;
-    transition-delay: 100ms;
-    transition: 1s ease;
+    /* transition-delay: 100ms;
+    transition: 1s ease; */
     z-index: 2;
     overflow: hidden;
     border-radius: 10px;
@@ -215,10 +245,10 @@
 }
 
 .cardTitle {
-    font-family: MursGothicDark;
+    font-family: NeuePowerTrialUltra;
     font-size: max(40px, 200%);
     background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 10, 89, 1) 14%, rgba(255, 255, 255, 1) 68%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 10, 89, 1) 14%, rgb(214, 214, 214) 68%);
     height: 30%;
     text-align: left;
     padding: 4px;
@@ -226,6 +256,7 @@
     color: var(--Semi-White);
     text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.377);
     white-space: wrap;
+    text-decoration: none;
 }
 
 .cardTitle:hover {
@@ -240,16 +271,31 @@
 }
 
 .cardDesc {
-    font-family: 'LiberationSans', sans-serif;
+    font-family: NeuePowerTrialMed;
 }
 
 .cardLang {
-    font-family: 'LiberationSansBold', sans-serif;
+    font-family: NeuePowerTrialMed;
     font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.languageItem {
+    display: flex;
+    border-radius: 5px;
+    background-color: ;
+    width: fit-content;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 8px;
+    margin: 2px;
+    background-color: var(--Text-Light);
 }
 
 .cardLink {
-    font-family: 'LiberationSans', sans-serif;
+    font-family: NeuePowerTrialMed;
     font-style: italic;
     white-space: wrap;
     overflow-wrap: break-word;
@@ -264,9 +310,7 @@
     z-index: 2;
 }
 
-#coloredCube {
-    color: black;
-}
+#coloredCube {}
 
 #placeholderOuter {
     height: 75vh;
@@ -333,7 +377,7 @@
     /* background: rgb(188, 202, 243); */
     z-index: 0;
     position: absolute;
-    outline: 10px solid rgb(97, 134, 168);
+    outline: 10px solid rgba(46, 189, 255, 0.9);
 }
 
 .knobContainer {
