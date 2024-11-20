@@ -5,7 +5,7 @@
             "title": "OCR Librarian",
             "description": "OCR Librarian is a Linux C++ CLI program that allows users to quickly and efficiently rename image folders in bulk using open source OCR technology..",
             "languages": [
-                "C",
+                "C++",
                 "Shell (Linux)",
                 "OpenCV",
                 "Tesseract"
