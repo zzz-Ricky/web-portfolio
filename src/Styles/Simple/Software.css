@@ -199,7 +199,7 @@
     position: absolute;
     font-family: MursGothicDark;
     font-size: 20px;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.192);
+    text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 .cardStack {
@@ -246,7 +246,7 @@
 
 .cardTitle {
     font-family: NeuePowerTrialUltra;
-    font-size: max(40px, 200%);
+    font-size: max(36px, 200%);
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 10, 89, 1) 14%, rgb(214, 214, 214) 68%);
     height: 30%;
@@ -255,8 +255,10 @@
     transition: 0.3s ease;
     color: var(--Semi-White);
     text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.377);
-    white-space: wrap;
+    word-break: break-word;
+    white-space: break-spaces;
     text-decoration: none;
+    text-overflow: "-";
 }
 
 .cardTitle:hover {

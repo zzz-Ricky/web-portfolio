@@ -58,6 +58,16 @@
             "link": "https://github.com/MaiTra10/Spout"
         },
         {
+            "image": "https://github.com/zzz-Ricky/DigitsConverter---Convertinator9000/blob/main/images/Screenshot%202024-11-20%20171447.jpg?raw=true",
+            "title": "Convertinator 9000",
+            "description": "Convertinator9000 is a simple Python-QT6 desktop application designed to convert an inputted decimal number to a different base form. This app was developed as a personal tool to assist with calculations in a Digital Circuits course at the University of Calgary.",
+            "languages": [
+                "QT6 (Desktop Client)",
+                "Python"
+            ],
+            "link": "https://github.com/zzz-Ricky/DigitsConverter---Convertinator9000"
+        },
+        {
             "image": "https://github.com/zzz-Ricky/Gobang-Arduino/blob/main/GIFS/Demo_2.gif?raw=true",
             "title": "GOBANG",
             "description": "First-Year engineering capstone project. Gobang is an Aruido based implementation of the classic board game.",
